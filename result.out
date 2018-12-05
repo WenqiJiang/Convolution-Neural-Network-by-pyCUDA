@@ -1,0 +1,108 @@
+testing computing time ...
+x:(226, 226, 3) f:(96, 7, 7, 3) b:(96,)
+----------------- layer 1 -----------------
+serial:
+ser_conv_time:41.4734318256
+method1:
+par_conv_gl_coal_nopad_block1_whole_time:0.0183057471275par_conv_gl_coal_nopad_block1_kernel_time:0.0120577727318
+speed up to serial: kernel:3439.55992107 whole:2265.59623798
+method2:
+par_conv_sh_coal_nopad_noiter_block1_whole_time:0.0172319839478par_conv_sh_coal_nopad_noiter_block1_kernel_time:0.0115910240173
+speed up to serial: kernel:3578.06452334 whole:2406.77056985
+speed up to naive parallel: kernel:1.04026811727 whole:1.06231222029
+method3:
+par_conv_sh_coal_nopad_iter_block1_whole_time:0.0122016735077par_conv_sh_coal_nopad_iter_block1_kernel_time:0.00676376962662 
+speed up to serial: kernel:6131.70378577 whole:3398.99537547
+speed up to naive parallel: kernel:1.78270009143 whole:1.5002652805
+method4:
+par_conv_sh_coal_nopad_iter_block2_whole_time:0.00698266239166par_conv_sh_coal_nopad_iter_block2_kernel_time:0.00173602880239 
+speed up to serial: kernel:23889.8293441 whole:5939.48690333
+speed up to naive parallel: kernel:6.94560638346 w3_hole:2.62159991429
+x:(55, 55, 96) f:(256, 5, 5, 96) b:(256,)
+----------------- layer 2 -----------------
+serial:
+ser_conv_time:9.04357600212
+method1:
+par_conv_gl_coal_nopad_block1_whole_time:0.0272346259212par_conv_gl_coal_nopad_block1_kernel_time:0.0233016266918
+speed up to serial: kernel:388.109213221 whole:332.061693385
+method2:
+par_conv_sh_coal_nopad_noiter_block1_whole_time:0.029639422493par_conv_sh_coal_nopad_noiter_block1_kernel_time:0.0259511661148
+speed up to serial: kernel:348.484378779 whole:305.119845175
+speed up to naive parallel: kernel:0.897902876069 whole:0.918864931586
+method3:
+par_conv_sh_coal_nopad_iter_block1_whole_time:0.0243006664276par_conv_sh_coal_nopad_iter_block1_kernel_time:0.0206480700016 
+speed up to serial: kernel:437.986504376 whole:372.153415177
+speed up to naive parallel: kernel:1.12851354582 whole:1.12073576263
+method4:
+par_conv_sh_coal_nopad_iter_block2_whole_time:0.00869399744987par_conv_sh_coal_nopad_iter_block2_kernel_time:0.00508819486022 
+speed up to serial: kernel:1777.36432086 whole:1040.20918505
+speed up to naive parallel: kernel:4.57954683968 w3_hole:3.13257808945
+x:(15, 15, 256) f:(384, 3, 3, 256) b:(384,)
+----------------- layer 3 -----------------
+serial:
+ser_conv_time:3.3078379631
+method1:
+par_conv_gl_coal_nopad_block1_whole_time:0.0151884419546par_conv_gl_coal_nopad_block1_kernel_time:0.0121595292578
+speed up to serial: kernel:272.036679462 whole:217.786523001
+method2:
+par_conv_sh_coal_nopad_noiter_block1_whole_time:0.0147458463745par_conv_sh_coal_nopad_noiter_block1_kernel_time:0.0118212605438
+speed up to serial: kernel:279.821085987 whole:224.323370737
+speed up to naive parallel: kernel:1.02861528284 whole:1.03001493226
+method3:
+par_conv_sh_coal_nopad_iter_block1_whole_time:0.0172411130524par_conv_sh_coal_nopad_iter_block1_kernel_time:0.0143097255373 
+speed up to serial: kernel:231.160126341 whole:191.857564709
+speed up to naive parallel: kernel:0.849738817567 whole:0.880943237741
+method4:
+par_conv_sh_coal_nopad_iter_block2_whole_time:0.00835260301304par_conv_sh_coal_nopad_iter_block2_kernel_time:0.00543131547105 
+speed up to serial: kernel:609.030718384 whole:396.024803039
+speed up to naive parallel: kernel:2.23878162161 w3_hole:1.81840821728
+x:(15, 15, 384) f:(384, 3, 3, 384) b:(384,)
+----------------- layer 4 -----------------
+serial:
+ser_conv_time:3.71506404877
+method1:
+par_conv_gl_coal_nopad_block1_whole_time:0.0198988441192par_conv_gl_coal_nopad_block1_kernel_time:0.0159107144881
+speed up to serial: kernel:233.494482698 whole:186.697479839
+method2:
+par_conv_sh_coal_nopad_noiter_block1_whole_time:0.0189162296875par_conv_sh_coal_nopad_noiter_block1_kernel_time:0.0150197933289
+speed up to serial: kernel:247.344551781 whole:196.395587817
+speed up to naive parallel: kernel:1.05931647259 whole:1.0519455752
+method3:
+par_conv_sh_coal_nopad_iter_block1_whole_time:0.0230865592346par_conv_sh_coal_nopad_iter_block1_kernel_time:0.0192095902219 
+speed up to serial: kernel:193.396319539 whole:160.918914378
+speed up to naive parallel: kernel:0.828269333408 whole:0.861923334566
+method4:
+par_conv_sh_coal_nopad_iter_block2_whole_time:0.0118544603402par_conv_sh_coal_nopad_iter_block2_kernel_time:0.00788558598055 
+speed up to serial: kernel:471.120860001 whole:313.38955483
+speed up to naive parallel: kernel:2.01769589823 w3_hole:1.67859552844
+x:(15, 15, 384) f:(256, 3, 3, 384) b:(256,)
+----------------- layer 5 -----------------
+serial:
+ser_conv_time:2.49544501305
+method1:
+par_conv_gl_coal_nopad_block1_whole_time:0.0132462394115par_conv_gl_coal_nopad_block1_kernel_time:0.00973449538756
+speed up to serial: kernel:256.350731465 whole:188.388940856
+method2:
+par_conv_sh_coal_nopad_noiter_block1_whole_time:0.0134375716649par_conv_sh_coal_nopad_noiter_block1_kernel_time:0.0100927984056
+speed up to serial: kernel:247.250060168 whole:185.706545444
+speed up to naive parallel: kernel:0.964499140511 whole:0.985761396612
+method3:
+par_conv_sh_coal_nopad_iter_block1_whole_time:0.0136638207375par_conv_sh_coal_nopad_iter_block1_kernel_time:0.0103546710278 
+speed up to serial: kernel:240.997034705 whole:182.631568505
+speed up to naive parallel: kernel:0.940106678563 whole:0.969438904826
+method4:
+par_conv_sh_coal_nopad_iter_block2_whole_time:0.00931975976045par_conv_sh_coal_nopad_iter_block2_kernel_time:0.00604694907237 
+speed up to serial: kernel:412.678357826 whole:267.758512793
+speed up to naive parallel: kernel:1.60981931071 w3_hole:1.42130695983
+----------------- Overall Result -----------------
+method1:
+speed up to serial: kernel:917.910205584 whole:638.106175013
+method2:
+speed up to serial: kernel:940.192920011 whole:663.663183805
+speed up to naive parallel: kernel:0.998120377856 whole:1.00977981119
+method3:
+speed up to serial: kernel:1447.04875415 whole:861.311367648
+speed up to naive parallel: kernel:1.10586569336 whole:1.06666130405
+method4:
+speed up to serial: kernel:5432.00472023 whole:1591.37379181
+speed up to naive parallel: kernel:3.47829001074 whole:2.13449774186

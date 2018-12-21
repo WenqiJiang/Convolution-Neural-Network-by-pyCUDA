@@ -1,5 +1,5 @@
 # Convolution-Neural-Network-by-pyCUDA
-## Read our report in the repository to see all implementation details 
+## Read our REPORT in the repository to see all implementation details 
 ## Introduction
 We build parallel algorithms of forward propagation for general convolutional neural networks and implemented ZF-Net for performance testing. Several methods include tiling, diminishing control divergence and carefully setting block size are used to optimize the algorithm speed. Finally, the most optimized algorithm is 107.35% and 1287 times faster than naive parallel method and serial method respectively.
 
